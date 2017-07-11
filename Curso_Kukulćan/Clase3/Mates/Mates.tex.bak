@@ -1,0 +1,33 @@
+\documentclass{article}
+\usepackage{lmodern}
+\usepackage[T1]{fontenc}
+\usepackage[spanish,activeacute]{babel}
+\usepackage{mathtools}
+\usepackage[hidelinks]{hyperref}
+
+\title{Ejemplo de \LaTeX{}}
+\author{Israel G}
+%\date{29 de enero de 2010}
+\date{\today}
+
+
+\begin{document}
+\maketitle
+
+Y despu'es de experimentar mucho con diferentes t'ecnicas resulta que la ecuaci'on \ref{sumatoria} es una de las f'ormulas generales. w\&
+
+\begin{equation}
+	\label{sumatoria}
+	w = \sum_{i=1}^{n} (x_{i}+y_{i})^{2}$$La fórmula de arriba es para hacer una sumatoria y la de abajo es para tener la reíz de la f$$
+	\sqrt{w = \sum_{i=1}^{n} (x_{i}+y_{i})^{2}}
+\end{equation}
+es muy importante.
+
+... y como sabemos que la ecuaci'on \ref{limite} tiene una estructura
+\begin{equation*}
+	\label{limite}
+	\lim_{x \to 0} (x^{2} + 2x + 4) = 4
+\end{equation*}
+se concluye que...
+
+\end{document}

@@ -1,0 +1,7 @@
+\select@language {spanish}
+\contentsline {section}{\numberline {1}Clase 1}{1}
+\contentsline {subsection}{\numberline {1.1}Salon 1}{1}
+\contentsline {section}{\numberline {2}Prueba}{1}
+\contentsline {section}{\numberline {3}Test}{1}
+\contentsline {subsection}{\numberline {3.1}Test es en inglés}{1}
+\contentsline {section}{\numberline {4}Otra sección}{1}

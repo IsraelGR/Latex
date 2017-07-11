@@ -1,0 +1,29 @@
+\documentclass[oneside,12pt]{book}
+\usepackage[spanish, es-tabla]{babel}
+\usepackage[utf8]{inputenc}
+
+
+\begin{document}
+\tableofcontents
+
+\chapter{Presentaición}
+Hola mundo en \LaTeX!
+\section{Clase 1}
+\subsection{Salon 1}
+
+\chapter{Sesión}
+\section{Prueba}
+\section{Test}
+	\subsection{Test es en inglés}
+	
+\section{Otra sección}
+	
+Aquí no pasó\_nada.\\ \\ \\ \&
+
+
+\huge israel.garcia.9003
+
+
+
+
+\end{document}

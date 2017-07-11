@@ -1,0 +1,98 @@
+\documentclass[a4paper,openright,10pt]{report}
+\usepackage[spanish]{babel} 
+\usepackage[utf8]{inputenc} 
+\usepackage{multirow} % para las tablas
+%\usepackage{fancyhdr} 
+%
+%\pagestyle{fancy} 
+%\lhead{\chaptername \ \thechapter} \chead{} \rhead{} 
+%\lfoot{} \cfoot{} \rfoot{\thepage} 
+
+\begin{document}
+Por ejemplo, la tabla (\ref{tabla:sencilla}):
+
+\begin{table}[htbp]
+	\begin{center}
+		\begin{tabular}{|c|r|}
+			\hline
+			País	& Ciudad de México, CDMX\\
+			\hline
+			España	& Madrid \\ \hline
+			España	& Sevilla \\ \hline
+			Francia	& París \\ \hline
+		\end{tabular}
+		\caption{Tabla muy sencilla.}
+	\label{tabla:sencilla}
+	\end{center}
+\end{table}
+
+
+Ahora vamos a ver como se pueden combinar celdas
+\begin{table}[htb]
+	\centering
+	%\begin{tabular}{|l|l|}
+	\begin{tabular}{| p{3.2cm}| p{2.2cm} |}
+		\hline
+		\multicolumn{2}{|c|}{Europa} \\ \hline
+		País & Ciudad \\
+		\hline \hline	
+		España & Madrid \\ \hline
+		España & Sevilla  \\ \hline
+		Francia & París \\ \hline
+	\end{tabular}
+	\caption{Tabla muy sencilla.}
+	\label{tabla:sencilla2}
+\end{table}
+
+
+Vamos a ver un ejemplo de tablas combinando diferentes columnas en una sola como en la tabla \ref{tabla:fusionandoceldas}. \cite{1}
+
+\begin{table}[htb]
+	\centering
+	\begin{tabular}{|l|c|}
+		\hline
+		\multicolumn{2}{|c|}{Europa} \\
+		\hline
+		País & Ciudad \\
+		\hline \hline
+		\multirow{2}{1cm}{España} & Madrid \\ \cline{2-2}
+		& Sevilla \\ \hline
+		Francia & París \\ \hline
+	\end{tabular}
+	\caption{Fusionando celdas.}
+	\label{tabla:fusionandoceldas}
+\end{table}
+
+Ahora la combinación de todos los ejemplos de arriba sería la tabla \ref{tabla:final}.
+
+\begin{table}[htb]
+	\centering
+	\begin{tabular}{|l|l|l|l|}
+		\hline
+		& \multicolumn{3}{c|}{Europa} \\
+		\cline{2-4}
+		& Ciudad & Río & Símbolo\\
+		\hline \hline
+		\multirow{3}{1cm}{España} & Madrid & Manzanares & Cibeles\\ 
+		\cline{2-4}
+		& Sevilla & Guadalquivir & Giralda\\ 
+		\cline{2-4}
+		& Zaragoza & Ebro & Pilar\\ 
+		\cline{1-4}
+		Francia & París & Sena & Torre Eiffel\\ \cline{1-4}
+		\multirow{2}{1cm}{Italia} & Roma & Tíber & San Pedro\\ \cline{2-4}
+		& Milán & \multicolumn{1}{c|}{-} & Duomo\\ \cline{1-4}
+	\end{tabular}
+	\caption{Tabla muy bonita.}
+	\label{tabla:final}
+\end{table}
+
+
+\begin{thebibliography}{99}
+
+
+\bibitem{1} Kaplan J., Sharma S. \& Weinberg A. (2011). "Meeting the cybersecurity challenge". McKinsey \& Company. Recuperado 12 Marzo 2017
+
+\bibitem{latex} Antonio M. Porrua (2013). "Latex" [online], https://url.com
+\end{thebibliography}
+\end{document}
